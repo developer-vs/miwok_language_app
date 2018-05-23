@@ -29,6 +29,7 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
+        // Create a list of words
         ArrayList<String> words = new ArrayList<>();
         words.add("one");
         words.add("two");
@@ -44,12 +45,9 @@ public class NumbersActivity extends AppCompatActivity {
         // Find the root view so we can add child views to it
         LinearLayout rootView = findViewById(R.id.rootView);
 
-        // Create a variable to keep track of the current index position
-        int index = 0;
-
         // Keep looping until we've reached the end of the list (which means keep looping
         // as long as the current index position is less than the length of the list)
-        while (index < words.size()) {
+        for (int index = 0; index < words.size(); index++) {
             // Create a new TextView
             TextView wordView = new TextView(this);
 
@@ -58,9 +56,6 @@ public class NumbersActivity extends AppCompatActivity {
 
             // Add this TextView as another child to the root view of this layout
             rootView.addView(wordView);
-
-            // Increment the index variable by 1
-            index++;
         }
     }
 }
