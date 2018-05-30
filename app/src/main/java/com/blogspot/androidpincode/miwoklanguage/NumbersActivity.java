@@ -61,6 +61,5 @@ public class NumbersActivity extends AppCompatActivity {
         // 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
         listView.setAdapter(itemsAdapter);
 
-
     }
 }
