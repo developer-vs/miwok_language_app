@@ -1,4 +1,4 @@
-# Android Nanodegree program
+# Android Basics Nanodegree Program by Google
 ## Miwok App
 This app displays lists of vocabulary words for the user to learn the Miwok language.
 
